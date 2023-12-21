@@ -6,6 +6,7 @@ import(
 	"github.com/Didjacome/hmac-veracode/hmac"
 	"io"
 	"os"
+	"bytes"
 )
 
 func ApiRequest(apiKeyID, apiKeySecret, apiUrl, httpMethod string) string {
