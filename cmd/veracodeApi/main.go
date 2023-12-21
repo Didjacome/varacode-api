@@ -7,11 +7,7 @@ import (
 )
 
 func main() {
-	err := load.Load()
-	if err != nil {
-		panic(err)
-	}
-
+	load.Load()
 	cr := load.GetApiCredetial()
 	r :=  apirequest.ApiRequest(cr.ApiKeyID, cr.ApiKeySecret, cr.ApiUrl, http.MethodGet)
 	print(r)
